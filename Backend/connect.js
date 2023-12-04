@@ -4,7 +4,7 @@ mongoose.connect('mongodb://0.0.0.0:27017', {
     dbName: 'Info',
     useNewUrlParser: true,
     useUnifiedTopology: true
-}, err => err ? console.log(err) :
+},  err=> err ? console.log(err) :
     console.log('Connected to database'));
 
 const UserSchema = new mongoose.Schema({
@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-    },
+    }
 });
 
 
